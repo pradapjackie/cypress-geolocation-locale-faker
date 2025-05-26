@@ -1,0 +1,22 @@
+{
+  "name": "cypress-geolocation-locale-faker",
+  "version": "1.0.0",
+  "description": "Cypress plugin to fake geolocation, timezone, and browser language",
+  "main": "plugin/index.js",
+  "keywords": [
+    "cypress",
+    "plugin",
+    "geolocation",
+    "locale",
+    "timezone",
+    "testing"
+  ],
+  "author": "Pradap Pandiyan",
+  "license": "MIT",
+  "peerDependencies": {
+    "cypress": "^12.0.0 || ^13.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

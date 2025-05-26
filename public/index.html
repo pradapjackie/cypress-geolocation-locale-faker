@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Geo & Locale Test Page</title>
+</head>
+<body>
+  <h1>Geo & Locale Info</h1>
+  <p id="language-display"></p>
+  <p id="timezone-display"></p>
+  <p id="location-display"></p>
+
+  <script>
+    document.getElementById('language-display').innerText = `Language: ${navigator.language}`;
+    document.getElementById('timezone-display').innerText = `Timezone: ${Intl.DateTimeFormat().resolvedOptions().timeZone}`;
+
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        const { latitude, longitude } = position.coords;
+        document.getElementById('location-display').innerText = `Location: ${latitude}, ${longitude}`;
+      });
+    }
+  </script>
+</body>
+</html>
