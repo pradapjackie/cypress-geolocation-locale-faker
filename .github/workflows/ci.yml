@@ -9,36 +9,14 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    container: cypress/included:13.7.3
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: 'npm'
-
-      - name: Generate lock file if missing
-        run: |
-          if [ ! -f package-lock.json ]; then
-            echo "🔧 package-lock.json not found. Creating..."
-            npm install --package-lock-only
-          fi
-
       - name: Install dependencies
         run: npm install
 
-      - name: Run Type Check
-        run: npm run type-check
-
-      - name: Run Cypress tests
-        run: npx cypress run --component
-
-      - name: Upload Cypress videos (if any)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: cypress-videos
-          path: cypress/videos
+      - name: Start server and run Cypress test
+        run: npx start-server-and-test start-server http://127.0.0.1:8080 "cypress run --spec cypress/e2e/example_spec.cy.js"
