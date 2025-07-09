@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "cypress-geolocation-locale-faker": "^1.0.0",
-    "start-server-and-test": "^2.0.12"
+    "start-server-and-test": "^2.0.12",
+    "http-server": "^14.1.1"
   }
 }
