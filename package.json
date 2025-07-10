@@ -1,6 +1,6 @@
 {
   "name": "cypress-geolocation-locale-faker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cypress plugin to fake geolocation, timezone, and browser language",
   "main": "plugin/index.js",
   "keywords": [
@@ -29,10 +29,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pradapjackie/cypress-geolocation-locale-faker.git"
+    "url": "git+https://github.com/pradapjackie/cypress-geolocation-locale-faker.git"
   },
   "bugs": {
     "url": "https://github.com/pradapjackie/cypress-geolocation-locale-faker/issues"
   },
-  "homepage": "https://github.com/pradapjackie/cypress-geolocation-locale-faker#readme"
+  "homepage": "https://github.com/pradapjackie/cypress-geolocation-locale-faker#readme",
+  "release": "https://github.com/pradapjackie/cypress-geolocation-locale-faker/releases"
 }
