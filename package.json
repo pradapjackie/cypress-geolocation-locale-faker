@@ -24,7 +24,6 @@
     "test": "start-server-and-test start-server http://127.0.0.1:8080 'cypress run --spec cypress/e2e/example_spec.cy.js'"
   },
   "devDependencies": {
-    "cypress-geolocation-locale-faker": "^1.0.0",
     "start-server-and-test": "^2.0.12",
     "http-server": "^14.1.1"
   },
