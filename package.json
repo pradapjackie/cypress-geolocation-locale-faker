@@ -11,10 +11,13 @@
     "timezone",
     "testing"
   ],
-  "author": "Pradap Pandiyan",
+  "author": {
+    "name": "Pradap Pandiyan",
+    "url": "https://github.com/pradapjackie"
+  },
   "license": "MIT",
   "peerDependencies": {
-    "cypress": "^12.0.0 || ^13.0.0"
+    "cypress": "^14.5.1"
   },
   "scripts": {
     "start-server": "http-server public -p 8080",
@@ -24,5 +27,13 @@
     "cypress-geolocation-locale-faker": "^1.0.0",
     "start-server-and-test": "^2.0.12",
     "http-server": "^14.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pradapjackie/cypress-geolocation-locale-faker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pradapjackie/cypress-geolocation-locale-faker/issues"
+  },
+  "homepage": "https://github.com/pradapjackie/cypress-geolocation-locale-faker#readme"
 }

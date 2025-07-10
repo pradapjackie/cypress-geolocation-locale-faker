@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: cypress/included:13.7.3
+    container: cypress/included:14.5.1
 
     steps:
       - name: Checkout code
